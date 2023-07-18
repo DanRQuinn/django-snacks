@@ -1,0 +1,19 @@
+{% load static %}
+{% load compress %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dans Django Snacks with CSS and flow</title>
+
+    {% compress css %}
+      <link rel="stylesheet" href="{% static 'src/output.css' %}">
+    {% endcompress % }
+  </head>
+  <body>
+    {% block content %}
+      <h1>Forgot Snacks</h1>
+    {% endblock content %}
+  </body>
+</html>
