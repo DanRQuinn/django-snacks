@@ -58,6 +58,7 @@ html {
 */
 
 body {
+  background-color: teal;
   margin: 0;
   /* 1 */
   line-height: inherit;
